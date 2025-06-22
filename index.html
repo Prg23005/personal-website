@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyanka Garg - Personal Portfolio</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="Priya_photo.JPG" alt="Priyanka Garg" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Priyanka Garg">Priyanka Garg</h1>
+          <p class="title">Data Analyst & Developer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:your.email@example.com" class="contact-link">your.email@example.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+              <a href="https://github.com/your-github-username" class="contact-link" target="_blank">your-github-username</a>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+      <!-- About Section -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+        <section class="about-text">
+          <p><strong>Priyanka Garg</strong></p>
+          <p>Bentonville, Arkansas | (571) 274-7945</p>
+          <p><a href="mailto:priyanka.garg18297@gmail.com">priyanka.garg18297@gmail.com</a> | <a href="https://www.linkedin.com/in/piyugarg" target="_blank">LinkedIn</a></p>
+          <p>Data Analyst & Product Operations Specialist with a passion for data-driven decision making, process optimization, and cross-functional collaboration. Experienced in analytics, machine learning, and business operations across healthcare and education sectors.</p>
+        </section>
+      </article>
+      <!-- Skills Section -->
+      <article class="skills" data-page="skills">
+        <header>
+          <h2 class="h2 article-title">Skills</h2>
+        </header>
+        <section class="about-text">
+          <ul>
+            <li>Data Analysis & Visualization: SQL, R, Python, BigQuery, Tableau, Power BI, VS Code</li>
+            <li>Statistical Analysis, Root Cause Analysis, A/B Testing, Experimentation</li>
+            <li>Feature Engineering, Machine Learning</li>
+            <li>MS Office, Advanced Excel (Pivot Tables, Formulas)</li>
+            <li>Agile Methodologies: Jira, Confluence, Aha</li>
+            <li>Process Optimization, Leadership, Stakeholder Engagement, Team Management</li>
+          </ul>
+        </section>
+      </article>
+      <!-- Education Section -->
+      <article class="education" data-page="education">
+        <header>
+          <h2 class="h2 article-title">Education</h2>
+        </header>
+        <section class="about-text">
+          <ul>
+            <li><strong>UCONN School of Business, Stamford, CT</strong><br>
+              MBA in Business Analytics (STEM), GPA: 3.86, Aug 2023 - May 2025
+              <ul>
+                <li>Relevant Coursework: Operations, Marketing, Data Analytics, Predictive Modeling, Statistics, Economic Markets, Business Law, Project Management, Financial Accounting, Business Decision Modeling, Strategic Management</li>
+                <li>Customer Churn Prediction Model: Developed a machine learning model in Python (Logistic Regression, Random Forest) to predict churn (85% accuracy), visualized in Tableau, and implemented retention strategies reducing churn by 20%.</li>
+                <li>Target Customer Purchase Behavior Analysis: Analyzed Target’s public dataset with SQL, Python, Tableau to identify trends and generate insights for personalized marketing and promotions.</li>
+              </ul>
+            </li>
+            <li><strong>Dayanand Ayurvedic College Hospital, Jalandhar, India</strong><br>
+              Bachelor of Ayurvedic Medicine and Surgery, GPA: 3.80, Sep 2014 - May 2020
+              <ul>
+                <li>Relevant Coursework: Healthcare Operations, Clinical Data Analysis, Health Information Systems (EHR, EMR)</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <!-- Experience Section -->
+      <article class="experience" data-page="experience">
+        <header>
+          <h2 class="h2 article-title">Experience</h2>
+        </header>
+        <section class="about-text">
+          <ul>
+            <li><strong>Educational Testing Services (ETS), Princeton, NJ</strong><br>
+              Operational Data Analyst Intern, Jun 2024 - Jul 2024
+              <ul>
+                <li>Analyzed productivity of 1000+ AP raters using R, revealing a 10% performance gap between onsite and remote raters; implemented optimization strategies to enhance efficiency.</li>
+                <li>Evaluated remediation training effectiveness, identifying underperformers and optimizing reader selection for AP Reading 2025.</li>
+                <li>Streamlined rater scheduling, reducing wait times and improving task allocation by 15%, boosting rater satisfaction by 10%.</li>
+              </ul>
+            </li>
+            <li><strong>University of Connecticut, Stamford, CT</strong><br>
+              Product Operations Analyst, Aug 2023 - May 2024
+              <ul>
+                <li>Developed and optimized a self-service portal, reducing student advisory queries by 40% through workflow definition and Agile methodologies.</li>
+                <li>Designed a real-time GPA calculator and progress tracker, reducing administrative workload and enabling early risk identification for students and advisors.</li>
+              </ul>
+            </li>
+            <li><strong>Delhi Heart Institute and Multispeciality Hospital, Bathinda, India</strong><br>
+              Operations Analyst, Jan 2021 - Jan 2022
+              <ul>
+                <li>Led a team of 15 to streamline workflows, optimize shifts, and boost efficiency, improving patient wait times by 25% and team productivity by 30%.</li>
+                <li>Developed real-time dashboards for patient admissions, increasing bed availability by 15% and reducing bottlenecks.</li>
+              </ul>
+            </li>
+            <li><strong>Government Ayurvedic Panchakarma Hospital, Bathinda, India</strong><br>
+              Operations Specialist, Jun 2020 - Dec 2020
+              <ul>
+                <li>Managed patient records using EHR, optimized inventory, reduced surplus stock by 20% and procurement costs by 5%.</li>
+              </ul>
+            </li>
+            <li><strong>Dayanand Ayurvedic College Hospital, Jalandhar, India</strong><br>
+              Process Improvement Specialist, May 2019 - May 2020
+              <ul>
+                <li>Automated patient registration, reducing tasks by 25% and check-in times by 30%, boosting satisfaction by 20%.</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <!-- Portfolio Section -->
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects">
+          <ul class="project-list">
+            <li class="project-item" data-category="data analysis">
+              <a href="projects/BDM%20Project/Final_BDM_project.ipynb" target="_blank">
+                <h3 class="project-title">BDM Project - Final_BDM_project.ipynb</h3>
+                <p class="project-category">Jupyter Notebook</p>
+              </a>
+            </li>
+            <li class="project-item" data-category="data analysis">
+              <a href="projects/BDM%20Project/Final_Project_OPIM_5641_Group3.ipynb" target="_blank">
+                <h3 class="project-title">BDM Project - Final_Project_OPIM_5641_Group3.ipynb</h3>
+                <p class="project-category">Jupyter Notebook</p>
+              </a>
+            </li>
+            <li class="project-item" data-category="predictive modeling">
+              <a href="projects/Predictive%20Modeling%20Project/OPIM_5604_Project_2_With%20audio.pptx" target="_blank">
+                <h3 class="project-title">Predictive Modeling Project - Presentation</h3>
+                <p class="project-category">PowerPoint</p>
+              </a>
+            </li>
+            <li class="project-item" data-category="predictive modeling">
+              <a href="projects/Predictive%20Modeling%20Project/Life%20Expectancy%20Data.csv" target="_blank">
+                <h3 class="project-title">Predictive Modeling Project - Life Expectancy Data</h3>
+                <p class="project-category">CSV Dataset</p>
+              </a>
+            </li>
+            <li class="project-item" data-category="predictive modeling">
+              <a href="projects/Predictive%20Modeling%20Project/Life%20Expectancy%20Data_Final.jmp" target="_blank">
+                <h3 class="project-title">Predictive Modeling Project - JMP File</h3>
+                <p class="project-category">JMP Dataset</p>
+              </a>
+            </li>
+            <li class="project-item" data-category="data analysis">
+              <a href="projects/Target%20Sales%20Data%20Analysis/Target%20Sales%20Data%20Analysis%20Project.pdf" target="_blank">
+                <h3 class="project-title">Target Sales Data Analysis - Project Report</h3>
+                <p class="project-category">PDF Report</p>
+              </a>
+            </li>
+            <li class="project-item" data-category="data analysis">
+              <a href="projects/Target%20Sales%20Data%20Analysis/target-products.csv" target="_blank">
+                <h3 class="project-title">Target Sales Data Analysis - Products Data</h3>
+                <p class="project-category">CSV Dataset</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <!-- Contact Section -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="mailto:priyanka.garg18297@gmail.com" method="POST" enctype="text/plain" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

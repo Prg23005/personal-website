@@ -1,0 +1,7 @@
+# .gitignore for Jekyll and Ruby
+_site/
+.sass-cache/
+.jekyll-metadata
+.bundle/
+Gemfile.lock
+.DS_Store
