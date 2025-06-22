@@ -12,7 +12,9 @@ const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+if (sidebarBtn) {
+  sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+}
 
 
 
@@ -50,8 +52,8 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 }
 
 // add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
+if (modalCloseBtn) modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+if (overlay) overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
@@ -61,18 +63,20 @@ const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+if (select) {
+  select.addEventListener("click", function () { elementToggleFunc(this); });
 
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
+  // add event in all select items
+  for (let i = 0; i < selectItems.length; i++) {
+    selectItems[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
+      let selectedValue = this.innerText.toLowerCase();
+      selectValue.innerText = this.innerText;
+      elementToggleFunc(select);
+      filterFunc(selectedValue);
 
-  });
+    });
+  }
 }
 
 // filter variables
@@ -144,15 +148,19 @@ const pages = document.querySelectorAll("[data-page]");
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
     const pageName = this.textContent.trim().toLowerCase();
-    for (let j = 0; j < pages.length; j++) {
-      if (pages[j].dataset.page === pageName) {
-        pages[j].classList.add("active");
-        navigationLinks[i].classList.add("active");
-      } else {
-        pages[j].classList.remove("active");
-        navigationLinks[j].classList.remove("active");
+
+    // Remove 'active' from all nav links and pages
+    navigationLinks.forEach(link => link.classList.remove("active"));
+    pages.forEach(page => page.classList.remove("active"));
+
+    // Add 'active' to the clicked nav link and the corresponding page
+    this.classList.add("active");
+    pages.forEach(page => {
+      if (page.dataset.page === pageName) {
+        page.classList.add("active");
       }
-    }
+    });
+
     window.scrollTo(0, 0);
   });
 }
