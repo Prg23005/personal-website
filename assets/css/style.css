@@ -292,6 +292,19 @@ article.active {
   z-index: -1;
 }
 
+/* Standardize project image dimensions */
+.project-image {
+  width: 100%;
+  max-width: 320px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 
 
@@ -1999,7 +2012,7 @@ hr {
 }
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 18px;
   padding: 0;
   list-style: none;
